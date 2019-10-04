@@ -1,0 +1,22 @@
+name: miquido-terraform-workshops-api-lambda-lucky-gen
+github_repo: k911/terraform-workshops-api-lambda-lucky-gen-complete
+badges: []
+related: []
+description: |-
+  Example terraform module provisioning API Gateway with Lambda function
+usage: |-
+  ```hcl
+  module "lucky-api" {
+    source      = "git::ssh://git@github.com/k911/terraform-workshops-api-lambda-lucky-gen-complete.git?ref=tags/1.0.0"
+    awsRegion   = "eu-central-1"
+    accountId   = "xxxx"
+    apiName     = "luckyapi"
+    lambdaName  = "luckygen"
+  }
+  ```
+include:
+  - "docs/terraform.md"
+  - "docs/targets.md"
+contributors:
+  - name: "Konrad Obal"
+    github: "k911"
